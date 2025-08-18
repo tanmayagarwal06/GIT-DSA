@@ -1,6 +1,8 @@
+package Arrays;
+
 import java.util.Scanner;
 
-public class Arrays {
+public class Largest {
     public static int largest(int[] a){
         int largestnumber = a[0];
         for (int i = 0; i < a.length; i++) {
