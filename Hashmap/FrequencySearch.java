@@ -23,6 +23,5 @@ public class FrequencySearch {
 
         System.out.println(freq);
 
-        s.close(); // ✅ Always good to close Scanner
     }
 }

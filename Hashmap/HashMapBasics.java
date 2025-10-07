@@ -12,6 +12,7 @@ public class HashMapBasics {
         map.put("Banana", 20);
         map.put("Mango", 30);
         map.put("Orange", 80);
+        map.put("Pears", 100);
 
         // Print entire map
         System.out.println("HashMap: " + map);
