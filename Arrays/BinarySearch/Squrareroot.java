@@ -8,7 +8,7 @@ public class Squrareroot {
 
         while (left <= right) {
             int mid = left + (right - left) / 2;
-            long sq = 1L * mid * mid;
+            long sq =  1L* mid * mid;
 
             if (sq == target) {
                 return mid;
