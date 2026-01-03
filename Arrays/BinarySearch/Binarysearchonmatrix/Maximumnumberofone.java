@@ -21,10 +21,41 @@ public class Maximumnumberofone {
         return index;     
     }
 
-    public int rowwithmax1s(int matrix[][], int n, int m){
-        int countmax = 0;
-        int index = -1;
+   public int rowwithmax1s(int matrix[][], int n, int m) {
+    int maxOnes = 0;
+    int rowIndex = -1;
+
+    for (int i = 0; i < n; i++) {
+        int firstOne = firstOneIndex(matrix[i], m);
+
+        if (firstOne != -1) {
+            int ones = m - firstOne;
+            if (ones > maxOnes) {
+                maxOnes = ones;
+                rowIndex = i;
+            }
+        }
     }
+    return rowIndex;
+}
+
+private int firstOneIndex(int[] row, int m) {
+    int low = 0, high = m - 1;
+    int ans = -1;
+
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+
+        if (row[mid] == 1) {
+            ans = mid;
+            high = mid - 1;
+        } else {
+            low = mid + 1;
+        }
+    }
+    return ans;
+}
+
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
