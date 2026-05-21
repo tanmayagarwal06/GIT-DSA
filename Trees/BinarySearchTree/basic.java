@@ -1,6 +1,7 @@
-package Trees.BinaryTree;
+package Trees.BinarySearchTree;
 
-public class BinaryTreeNode<T> {
+public class basic {
+    public class BinaryTreeNode<T> {
     
     T data;
     public BinaryTreeNode<T> left;
@@ -9,4 +10,6 @@ public class BinaryTreeNode<T> {
     public BinaryTreeNode(T data){
         this.data = data;
     }
+}
+
 }

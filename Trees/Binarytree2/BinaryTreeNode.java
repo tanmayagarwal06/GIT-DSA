@@ -1,10 +1,10 @@
-package Trees.BinaryTree;
+package Trees.Binarytree2;
 
 public class BinaryTreeNode<T> {
     
     T data;
-    public BinaryTreeNode<T> left;
-    public BinaryTreeNode<T> right;
+    BinaryTreeNode<T> left;
+    BinaryTreeNode<T> right;
 
     public BinaryTreeNode(T data){
         this.data = data;
